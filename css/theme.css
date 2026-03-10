@@ -1,6 +1,8 @@
 :root{
   --brand-name: "Czech Safir";
-  --primary: #7c3aed;
-  --text: #111;
-  --bg: #fff;
+  --primary: #0050a8;
+  --primary-dark: #143470;
+  --primary-light: #9bb9d9;
+  --text: #10213f;
+  --bg: #f8fbff;
 }
