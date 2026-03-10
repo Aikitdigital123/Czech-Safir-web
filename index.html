@@ -4,14 +4,78 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Czech Safir</title>
-  <meta name="description" content="Komplexní péče o provozy, zázemí a logistiku. Czech Safir spojuje úklid, údržbu, skladování i dopravu do jednoho stabilního řešení.">
-  <meta property="og:title" content="Czech Safir">
-  <meta property="og:description" content="Komplexní péče o provozy, zázemí a logistiku pod jednou střechou.">
-  <link rel="icon" href="data:,">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0050a8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Czech Safir | Úklid, údržba, skladování a doprava pro firmy</title>
+  <meta name="description" content="Komplexní provozní služby pro firmy: úklid, technická údržba, skladování a doprava. Czech Safir zajišťuje jeden koordinovaný provozní systém.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://cechsafir.cz/">
+  <link rel="alternate" hreflang="cs-CZ" href="https://cechsafir.cz/">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Czech Safir">
+  <meta property="og:title" content="Czech Safir | Úklid, údržba, skladování a doprava pro firmy">
+  <meta property="og:description" content="Komplexní provozní služby pro firmy pod jednou koordinací: úklid, údržba, skladování a doprava.">
+  <meta property="og:url" content="https://cechsafir.cz/">
+  <meta property="og:image" content="https://cechsafir.cz/assets/images/hero-blueprint.png">
+  <meta property="og:image:alt" content="Czech Safir - komplexní provozní služby pro firmy">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Czech Safir | Úklid, údržba, skladování a doprava pro firmy">
+  <meta name="twitter:description" content="Komplexní provozní služby pro firmy pod jednou koordinací: úklid, údržba, skladování a doprava.">
+  <meta name="twitter:image" content="https://cechsafir.cz/assets/images/hero-blueprint.png">
+  <link rel="icon" type="image/svg+xml" href="/Logo/Safir1.svg">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/theme.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://cechsafir.cz/#organization",
+          "name": "Czech Safir s.r.o.",
+          "url": "https://cechsafir.cz/",
+          "logo": "https://cechsafir.cz/Logo/Safir1.svg",
+          "image": "https://cechsafir.cz/assets/images/hero-blueprint.png",
+          "email": "info@cechsafir.cz",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ječná 2093/32a",
+            "addressLocality": "Praha 2",
+            "postalCode": "120 00",
+            "addressCountry": "CZ"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://cechsafir.cz/#website",
+          "url": "https://cechsafir.cz/",
+          "name": "Czech Safir",
+          "inLanguage": "cs-CZ",
+          "publisher": {
+            "@id": "https://cechsafir.cz/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://cechsafir.cz/#webpage",
+          "url": "https://cechsafir.cz/",
+          "name": "Czech Safir | Úklid, údržba, skladování a doprava pro firmy",
+          "description": "Komplexní provozní služby pro firmy: úklid, technická údržba, skladování a doprava.",
+          "inLanguage": "cs-CZ",
+          "isPartOf": {
+            "@id": "https://cechsafir.cz/#website"
+          },
+          "about": {
+            "@id": "https://cechsafir.cz/#organization"
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -20,8 +84,8 @@
         <img class="brand-logo" src="Logo/Safir1.svg" alt="Logo Czech Safir">
         <span class="brand-text">Czech Safir</span>
       </a>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" type="button">Menu</button>
-      <nav class="site-nav">
+      <button class="nav-toggle" aria-label="Menu" aria-controls="site-nav" aria-expanded="false" type="button">Menu</button>
+      <nav class="site-nav" id="site-nav">
         <ul>
           <li><a href="index.html" class="nav-link active">Domů</a></li>
           <li><a href="contact.html" class="nav-link">Kontakt</a></li>
@@ -41,7 +105,7 @@
             <p class="hero-lead">Czech Safir spojuje klíčové provozní služby do jednoho řízeného modelu. Méně dodavatelů, jasnější komunikace a stabilní odpovědnost za výsledek.</p>
             <div class="hero-actions">
               <a href="contact.html#contact-form" class="btn btn-primary">Nezávazná poptávka</a>
-              <a href="contact.html" class="btn btn-secondary">Kontaktujte nás</a>
+              <a href="index.html#sluzby" class="btn btn-secondary">Prohlédnout služby</a>
             </div>
             <ul class="hero-points">
               <li>Jedno kontaktní místo pro každodenní operativu</li>
@@ -63,7 +127,7 @@
         <div class="content-panel">
           <span class="eyebrow">Pod jednou střechou</span>
           <h2>Vše, co váš provoz potřebuje, bez tříštění odpovědnosti.</h2>
-          <p>Nový koncept služeb Czech Safir stojí na jednom koordinačním bodě. Místo samostatných dodavatelů pro úklid, servis a logistiku získáte jednoho partnera, který rozumí návaznostem provozu.</p>
+          <p>Czech Safir staví spolupráci na jednom koordinačním bodě. Místo samostatných dodavatelů pro úklid, servis a logistiku získáte jednoho partnera, který rozumí návaznostem provozu.</p>
           <ul class="bullet-list">
             <li>Úklid a technická údržba navázané na reálný chod objektu</li>
             <li>Skladování a doprava řešené jako součást stejného provozního celku</li>
@@ -76,75 +140,107 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="sluzby">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow">Oblasti péče</span>
+          <span class="eyebrow">Služby</span>
           <h2>Od technického zázemí po skladové a dopravní procesy.</h2>
-          <p>Nové podklady ukazují Czech Safir jako partnera pro celý provozní ekosystém. Proto web staví služby do větších celků a ne jen do samostatných kategorií.</p>
-        </div>
-        <div class="showcase-grid">
-          <figure class="visual-panel info-visual">
-            <img src="assets/images/facility-care-diagram.png" alt="Technické schéma kancelářského a provozního zázemí s vyznačením úklidových služeb a technické údržby">
-          </figure>
-          <figure class="visual-panel info-visual">
-            <img src="assets/images/logistics-diagram.png" alt="Technické schéma skladu s vyznačením skladování a dopravy">
-          </figure>
+          <p>Na jednom místě najdete celý rozsah spolupráce. Místo dublování na další podstránce jsou detailní služby přímo tady, aby bylo jasné, co Czech Safir skutečně pokrývá.</p>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container compare-layout">
-        <div class="compare-media info-media">
-            <img src="assets/images/comparison-diagram.png" alt="Srovnání běžného modelu služeb a přístupu Czech Safir">
+      <div class="container split-section">
+        <div class="section-visual info-visual">
+          <img src="assets/images/facility-care-diagram.png" alt="Schéma budovy s vyznačením úklidových služeb a technické údržby">
         </div>
-        <article class="compare-panel">
-          <span class="eyebrow">Rozdíl v přístupu</span>
-          <h2>Méně fragmentace, více přehledu a stability.</h2>
-          <p>Czech Safir nestaví nabídku jen na jednotlivých úkonech. Hodnota je v koordinaci, kontinuitě a v tom, že provozní problémy řeší jeden partner v souvislostech.</p>
-          <ul class="compare-list">
-            <li>Jednotná komunikace místo řešení více různých dodavatelů</li>
-            <li>Nižší provozní tření mezi zázemím, skladem a dopravou</li>
-            <li>Stabilní tým a dlouhodobá znalost vašeho prostředí</li>
-            <li>Jasnější plánování a rychlejší reakce na změny provozu</li>
+        <article class="content-panel">
+          <span class="eyebrow">Zázemí a technologie</span>
+          <h2>Služby pro prostředí, kde lidé pracují a technologie musí fungovat bez výpadků.</h2>
+          <h3>Úklidové služby</h3>
+          <p>Pravidelný i jednorázový úklid kanceláří, výrobních prostor a společných zón. Důraz klademe na stabilní standard, přesnost a spolehlivé navázání na rytmus provozu.</p>
+          <h3>Technická údržba</h3>
+          <p>Preventivní kontroly, pravidelný servis i rychlé zásahy. Cílem je udržet zařízení a technické celky ve stavu, který minimalizuje poruchy a neplánované odstávky.</p>
+          <ul class="detail-list">
+            <li>pravidelné úklidové plány podle typu provozu</li>
+            <li>údržba technologií a provozních zařízení</li>
+            <li>rychlejší koordinace mezi servisními zásahy a běžným provozem</li>
           </ul>
         </article>
       </div>
     </section>
 
     <section class="section">
-      <div class="container">
-        <div class="process-layout">
-          <article class="process-panel">
-            <span class="eyebrow">Jak spolupracujeme</span>
-            <h2>Jasný postup od první prohlídky po pravidelnou realizaci.</h2>
-            <p>Spolupráci stavíme na jednoduchém a opakovatelném modelu. Nejdřív porozumíme vašemu provozu, potom nastavíme rozsah služeb a následně držíme kvalitu v každodenní komunikaci.</p>
-            <div class="process-steps">
-              <div class="process-step">
-                <strong>1</strong>
-                <h3>Analýza</h3>
-                <p>Vyjasnění potřeb, rozsahu a kritických míst provozu.</p>
-              </div>
-              <div class="process-step">
-                <strong>2</strong>
-                <h3>Nabídka</h3>
-                <p>Nastavení harmonogramu, kapacit a odpovědností.</p>
-              </div>
-              <div class="process-step">
-                <strong>3</strong>
-                <h3>Realizace</h3>
-                <p>Pravidelné poskytování služeb a průběžná koordinace.</p>
-              </div>
-            </div>
-          </article>
-          <div class="section-visual info-visual">
-            <img src="assets/images/process-diagram.png" alt="Diagram spolupráce od analýzy a prohlídky přes nabídku až po realizaci">
-          </div>
+      <div class="container split-section">
+        <article class="content-panel">
+          <span class="eyebrow">Sklad a pohyb zboží</span>
+          <h2>Bezpečné skladování a doprava jako součást jednoho logistického obrazu.</h2>
+          <p>Druhý provozní blok řeší příjem, evidenci, uložení a pohyb zboží. Díky návaznosti na dopravu nevznikají zbytečné komunikační mezery mezi skladem a expedicí.</p>
+          <h3>Skladování</h3>
+          <p>Bezpečné uložení zboží, přesný příjem a vyskladnění, přehledná evidence a dodržování skladových standardů.</p>
+          <h3>Doprava</h3>
+          <p>Navazná přeprava a logistická podpora pro zajištění plynulého dodavatelského řetězce a časové návaznosti procesů.</p>
+          <ul class="detail-list">
+            <li>příjem, evidence a skladová disciplína</li>
+            <li>návaznost skladu na expediční a dopravní proces</li>
+            <li>lepší přehled nad průběhem zakázky od uložení po doručení</li>
+          </ul>
+        </article>
+        <div class="section-visual info-visual">
+          <img src="assets/images/logistics-diagram.png" alt="Schéma skladu a dopravy s vyznačením skladování a logistické podpory">
         </div>
       </div>
     </section>
 
+    <section class="section" id="vyhody">
+      <div class="container compare-layout">
+        <div class="compare-media info-media">
+          <img src="assets/images/why-us-diagram.png" alt="Vizuál důvodů, proč svěřit provoz Czech Safir">
+        </div>
+        <article class="compare-panel">
+          <span class="eyebrow">Proč Czech Safir</span>
+          <h2>Méně fragmentace, více přehledu a stability.</h2>
+          <p>Hodnota není jen v jednotlivých úkonech. Je v koordinaci, kontinuitě a v tom, že provozní problémy řeší jeden partner v souvislostech.</p>
+          <ul class="compare-list">
+            <li>jednotná komunikace místo řešení více různých dodavatelů</li>
+            <li>nižší provozní tření mezi zázemím, skladem a dopravou</li>
+            <li>stabilní tým a dlouhodobá znalost vašeho prostředí</li>
+            <li>jasnější plánování a rychlejší reakce na změny provozu</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="postup">
+      <div class="container process-layout">
+        <article class="process-panel">
+          <span class="eyebrow">Jak spolupracujeme</span>
+          <h2>Jasný postup od první prohlídky po pravidelnou realizaci.</h2>
+          <p>Spolupráci stavíme na jednoduchém a opakovatelném modelu. Nejdřív porozumíme vašemu provozu, potom nastavíme rozsah služeb a následně držíme kvalitu v každodenní komunikaci.</p>
+          <div class="process-steps">
+            <div class="process-step">
+              <strong>1</strong>
+              <h3>Analýza</h3>
+              <p>Vyjasnění potřeb, rozsahu a kritických míst provozu.</p>
+            </div>
+            <div class="process-step">
+              <strong>2</strong>
+              <h3>Nabídka</h3>
+              <p>Nastavení harmonogramu, kapacit a odpovědností.</p>
+            </div>
+            <div class="process-step">
+              <strong>3</strong>
+              <h3>Realizace</h3>
+              <p>Pravidelné poskytování služeb a průběžná koordinace.</p>
+            </div>
+          </div>
+        </article>
+        <div class="section-visual info-visual">
+          <img src="assets/images/process-diagram.png" alt="Diagram spolupráce od analýzy a prohlídky přes nabídku až po realizaci">
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -156,7 +252,8 @@
       <div class="footer-right">
         <div>Ječná 2093/32a, Nové Město (Praha 2), 120 00 Praha</div>
         <div>IČO: 27232484</div>
-        <div>E-mail: info@cechsafir.cz</div>
+        <div>E-mail: <a class="footer-link" href="mailto:info@cechsafir.cz">info@cechsafir.cz</a></div>
+        <a class="footer-link" href="index.html#sluzby">Služby</a>
         <a class="footer-link" href="privacy.html">Ochrana údajů</a>
         <a class="footer-link" href="impressum.html">Provozovatel</a>
       </div>
